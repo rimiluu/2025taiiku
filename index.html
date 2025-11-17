@@ -20,20 +20,21 @@
     }
 
     .panel {
-      background: #ffffff;
-      width: 80vw;
-      max-width: 1000px;
-      height: 80vh;
-      max-height: 650px;
-      padding: 60px 80px;
-      box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
-    }
+  background: #ffffff;
+  width: 100vw;              
+  height: 100vh;             
+  max-width: none;
+  max-height: none;
+  padding: 60px 80px;         
+  box-shadow: none;           
+}
 
-    .columns {
-      display: flex;
-      justify-content: space-between;
-      height: 100%;
-    }
+.columns {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
 
     .column {
       display: flex;
@@ -90,20 +91,20 @@
     }
 
     .circle {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      background: #e3e3e3;
-      margin-left: 40px;
-    }
+  width: 54px;      /* 64px → 54px （一辺 −10px） */
+  height: 54px;     /* 64px → 54px */
+  border-radius: 50%;
+  background: #e3e3e3;
+  margin-left: 40px;
+}
 
-    .rect {
-      width: 220px;
-      height: 60px;
-      border-radius: 6px;
-      background: #e3e3e3;
-      margin-left: 40px;
-    }
+.rect {
+  width: 210px;     /* 220px → 210px */
+  height: 50px;     /* 60px → 50px */
+  border-radius: 6px;
+  background: #e3e3e3;
+  margin-left: 40px;
+}
 
     @media (max-width: 800px) {
       .panel {
